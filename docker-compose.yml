@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  rooms_web:
+    container_name: "rooms_web"
+    build: .
+    ports:
+      - "8080:8000"
+    networks:
+      - rooms_network
+
+networks:
+  rooms_network:
+    driver: bridge
+

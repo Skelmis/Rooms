@@ -2,16 +2,6 @@
 ### Example user template template
 ### Example user template
 
-notes.txt
-*.json
-!/tests/raw.json
-!/testing/tracker_tests.json
-examples/dev.py
-.tox/
-/assets
-docs/_build
-test/
-*.prof
 
 # IntelliJ project files
 .idea
