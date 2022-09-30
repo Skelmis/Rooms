@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+    <title>Chat</title>
+</head>
+<body>
+<h1>WebSocket Chat</h1>
+<form action="" onsubmit="createWS(event)">
+    <input type="text" id="ws_username" autocomplete="off"/>
+    <button>Connect</button>
+</form>
+<br>
+<form action="" onsubmit="changeTo(event)">
+    <input type="text" id="conversation_id" autocomplete="off"/>
+    <button>Change To</button>
+</form>
+<br>
+<form action="" onsubmit="sendMessage(event)">
+    <input type="text" id="messageText" autocomplete="off"/>
+    <button>Send</button>
+</form>
+<ul id='messages'>
+</ul>
+<script src="{{ url_for('static',path='/main.js') }}"></script>
+</body>
+</html>
