@@ -9,7 +9,8 @@ function sendMessage(event) {
 function createWS(event) {
     name = document.getElementById('ws_username')
     id = Math.floor(Math.random() * 90000)
-    ws = new WebSocket(`ws://localhost:4567/ws/${id}/${name.value}`)
+    ws = new WebSocket(`wss://rooms.koldfusion.xyz/ws/${id}/${name.value}`)
+    // ws = new WebSocket(`ws://localhost:4567/ws/${id}/${name.value}`)
     name.value = ''
     ws.onmessage = function (event) {
         let messages = document.getElementById('messages')
